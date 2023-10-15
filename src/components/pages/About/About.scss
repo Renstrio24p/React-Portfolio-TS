@@ -1,0 +1,138 @@
+.about {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  padding-left: 15%;
+}
+
+.a-left {
+  flex: 1;
+  padding-right: 2rem;
+}
+
+.a-left div {
+  margin-bottom: 1rem;
+  span {
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    background-image: linear-gradient(
+      55deg,
+      rgb(255, 255, 255) 20%,
+      var(--cyan) 60%
+    );
+    font-size: 1.5rem;
+  }
+  h2 {
+    font-size: 3rem;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    background-image: linear-gradient(
+      55deg,
+      rgb(255, 255, 255) 20%,
+      var(--cyan) 60%
+    );
+    font-weight: 500;
+  }
+  p {
+    font-weight: 400;
+    color: aliceblue;
+    font-size: 13px;
+  }
+  background: rgba(16, 58, 66, 0.457);
+  padding: 2rem;
+  border-radius: 0.6rem;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.a-button {
+  font-weight: 500;
+  border-radius: 0.2rem;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.a-right {
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  position: relative;
+  .a-logo {
+    width: 14rem;
+    height: 16rem;
+    margin-top: -5%;
+    position: absolute;
+    img.profile {
+      margin-top: -50px;
+      width: 100%;
+      height: auto;
+      object-fit: contain;
+      border-radius: 100%;
+    }
+
+    .card {
+      padding: 5px 10px;
+      display: flex;
+      align-items: center;
+      position: absolute;
+      gap: 10px;
+      background-color: rgb(181, 181, 181);
+      border-radius: 0.3rem;
+      box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+        rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+        rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+      p {
+        font-weight: 400;
+        font-size: 0.7rem;
+      }
+    }
+
+    .a-card1 {
+      top: 20px;
+      left: -40%;
+    }
+    .a-card2 {
+      right: -50%;
+      bottom: 10%;
+    }
+
+    .emoji {
+        width: 6rem;
+        height: auto;
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    .a-emoji1,
+    .a-emoji2 {
+        position: absolute;
+    }
+
+    .a-emoji1 {
+        top: 0;
+        right: -20%;
+    }
+
+    .a-emoji2 {
+        bottom: -10%;
+        left: -5%;
+    }
+
+    .card-img {
+      width: 30px;
+      height: 30px;
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+}

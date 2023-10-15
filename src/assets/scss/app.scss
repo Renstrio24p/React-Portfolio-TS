@@ -1,0 +1,30 @@
+
+:root {
+    --typescript: rgb(0, 140, 255);
+    --webpack: rgb(153, 212, 241);
+    --deepsea: rgb(13, 26, 26);
+    --twilight: rgb(7, 12, 12);
+    --submarine: rgb(20, 58, 58);
+    --underwater: rgb(10, 77, 97);
+    --white: white;
+    --cyan: cyan;
+    --gold: gold;
+    --red: rgb(114, 10, 10);
+    --violet: rgb(48, 30, 56);
+}
+
+.button {
+    padding: 5px 10px;
+    border: none;
+    width: max-content;
+}
+
+.blur {
+    filter: blur(20em);
+    backdrop-filter: blur(10px);
+}
+
+.App {
+    width: 100%;
+    height: 100vh;
+}
