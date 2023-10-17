@@ -1,0 +1,59 @@
+
+.card-portfolio {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.5rem;
+    background-color: rgba(0, 0, 0, 0.521);
+    box-shadow: rgba(89, 88, 88, 0.35) 0px 5px 15px;
+    cursor: pointer;
+
+    &:hover {
+        background-color: rgba(100, 100, 100, 0.301);
+    }
+
+    .project-img {
+        width: 100%;
+        height: 7rem;
+        position: relative;
+        img {
+            border-top-left-radius: 0.5rem;
+            border-top-right-radius: 0.5rem;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .types {
+            position: absolute;
+            top: 0.2rem;
+            left: 0.3rem;
+            background-color: rgb(24, 65, 70);
+            padding: 0.3rem;
+            font-size: 0.7rem;
+            text-transform: capitalize;
+            color: white;
+            border-radius: 0.3rem;
+            width: 4.5rem;
+            text-align: left;
+            span {
+                font-weight: 400
+            }
+        }
+    }
+
+    .card-info {
+        padding: 1rem;
+        h3 {
+            font-weight: 500;
+            font-size: 0.9rem;
+        }
+
+        p {
+            font-size: 0.7rem;
+            font-weight: 400;
+            margin-top: 1rem;
+        }
+    }
+
+}

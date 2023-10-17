@@ -1,8 +1,23 @@
 import { Link } from "react-router-dom";
 import { Logo, Profile } from "../images";
+import { useState, useEffect } from "react";
 import "./Sidebar.scss";
 
 export default function Sidebar() {
+  const [activeLink, setActiveLink] = useState("");
+
+  const handleLinkClick = (path) => {
+    setActiveLink(path);
+    localStorage.setItem("activeLink", path);
+  };
+
+  useEffect(() => {
+    const storedActiveLink = localStorage.getItem("activeLink");
+    if (storedActiveLink) {
+      setActiveLink(storedActiveLink);
+    }
+  }, []);
+
   return (
     <aside className="sidebar">
       <div className="upper">
@@ -19,7 +34,11 @@ export default function Sidebar() {
         <h2>Overview</h2>
         <ul>
           <li>
-            <Link to={"/"}>
+            <Link
+              to="/"
+              onClick={() => handleLinkClick("/")}
+              className={activeLink === "/" ? "active-link" : ""}
+            >
               <box-icon
                 color={"var(--cyan)"}
                 type="solid"
@@ -30,7 +49,11 @@ export default function Sidebar() {
             </Link>
           </li>
           <li>
-            <Link to={"/about"}>
+            <Link
+              to="/about"
+              onClick={() => handleLinkClick("/about")}
+              className={activeLink === "/about" ? "active-link" : ""}
+            >
               <box-icon
                 color={"var(--cyan)"}
                 name="info-circle"
@@ -40,20 +63,54 @@ export default function Sidebar() {
             </Link>
           </li>
           <li>
-            <Link to={"/services"}>
-              <box-icon name="server" color={"var(--cyan)"}></box-icon>
+            <Link
+              to="/services"
+              onClick={() => handleLinkClick("/services")}
+              className={activeLink === "/services" ? "active-link" : ""}
+            >
+              <box-icon
+                name="server"
+                color={"var(--cyan)"}
+              ></box-icon>
               <span>Services</span>
             </Link>
           </li>
           <li>
-            <Link to={"/portfolio"}>
-              <box-icon name="briefcase" color={"var(--cyan)"}></box-icon>
+            <Link
+              to="/skills"
+              onClick={() => handleLinkClick("/skills")}
+              className={activeLink === "/skills" ? "active-link" : ""}
+            >
+              <box-icon
+                name="code-alt"
+                color={"var(--cyan)"}
+              ></box-icon>
+              <span>Skills</span>
+            </Link>
+          </li>
+          <li>
+            <Link
+              to="/portfolio"
+              onClick={() => handleLinkClick("/portfolio")}
+              className={activeLink === "/portfolio" ? "active-link" : ""}
+            >
+              <box-icon
+                name="briefcase"
+                color={"var(--cyan)"}
+              ></box-icon>
               <span>Portfolio</span>
             </Link>
           </li>
           <li>
-            <Link to={"/contact"}>
-              <box-icon name="phone" color={"var(--cyan)"}></box-icon>
+            <Link
+              to="/contact"
+              onClick={() => handleLinkClick("/contact")}
+              className={activeLink === "/contact" ? "active-link" : ""}
+            >
+              <box-icon
+                name="phone"
+                color={"var(--cyan)"}
+              ></box-icon>
               <span>Contact</span>
             </Link>
           </li>
@@ -108,7 +165,7 @@ export default function Sidebar() {
           <button className="toggle"></button>
           <box-icon name="moon" color={"var(--cyan)"} size={"sm"}></box-icon>
         </div>
-        <p className="copy">&copy;Copyright 2023, by Waren</p>
+        <p className="copy">&copy; Copyright 2023, by Waren</p>
       </div>
     </aside>
   );

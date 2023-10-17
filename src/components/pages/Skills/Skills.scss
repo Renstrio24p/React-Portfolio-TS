@@ -1,0 +1,122 @@
+.skills-div {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+    padding-left: 20%;
+    width: 100%;
+    padding-right: 20px;
+  
+    .a-head-skill {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 20px;
+      position: relative;
+  
+      p {
+        margin: 0;
+        font-size: 1.5em;
+        z-index: 2;
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+        background-image: linear-gradient(
+          45deg,
+          rgb(255, 255, 255) 50%,
+          var(--cyan),
+          var(--white)
+        );
+      }
+  
+      h2 {
+        font-size: 3.5em;
+        position: absolute;
+        z-index: 0;
+        opacity: 0.2;
+        -webkit-text-stroke: 1px cyan;
+        color: transparent;
+      }
+    }
+  
+    p {
+      background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent;
+      background-image: linear-gradient(
+        45deg,
+        rgb(255, 255, 255) 50%,
+        var(--cyan),
+        var(--white)
+      );
+      font-size: 0.8rem;
+      font-weight: 400;
+    }
+  
+    .s-skillset {
+        h3 {
+          margin-bottom: 1rem;
+          background-clip: text;
+          -webkit-background-clip: text;
+          color: transparent;
+          background-image: linear-gradient(
+            45deg,
+            rgb(255, 255, 255) 50%,
+            var(--cyan),
+            var(--white)
+          );
+          font-weight: 500;
+        }
+      width: 100%;
+      margin-top: 2rem;
+
+
+      .skills {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        grid-gap: 20px;
+        width: 100%;
+        height: fit-content;
+        margin-bottom: 1rem;
+  
+        li {
+          display: flex;
+          align-items: center;
+          gap: 1rem;
+          background-color: rgba(35, 34, 34, 0.5);
+          padding: 0.5rem;
+          border-radius: 0.3rem;
+          &:hover {
+            background-color: rgb(95, 95, 95);
+            cursor: pointer;
+          }
+  
+          .prog {
+            background: rgba(46, 44, 44, 0.671);
+            width: 100%;
+            height: 0.4rem;
+            border-radius: 14rem;
+            position: relative;
+  
+            .percent {
+              height: 100%;
+              border-radius: 14rem;
+              position: absolute;
+              right: 0;
+            }
+          }
+  
+          .img {
+            width: 40px;
+            height: auto;
+  
+            img {
+              width: 100%;
+              height: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+  
