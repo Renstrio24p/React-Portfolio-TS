@@ -8,7 +8,7 @@
   -webkit-box-shadow: 8px -2px 19px -1px rgba(0, 0, 0, 0.43);
   -moz-box-shadow: 8px -2px 19px -1px rgba(0, 0, 0, 0.43);
   box-shadow: 8px -2px 19px -1px rgba(0, 0, 0, 0.43);
-  z-index: 99;
+  z-index: 120;
 }
 
 .sidebar .upper {
@@ -231,6 +231,7 @@ li {
 .switch {
   position: relative;
   display: flex;
+  margin-top: -10px ;
   align-items: center;
   width: 100%;
   justify-content: space-between;

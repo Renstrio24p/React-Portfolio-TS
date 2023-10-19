@@ -1,8 +1,11 @@
 import { Profile, Signature } from "../../elements/images";
 import "./Home.scss";
+import Loader from 'react-loaders'
 
 export default function Home() {
+
   return (
+    <>
     <div className="home">
       <div className="h-left">
         <span>Hi, I'm</span>
@@ -38,6 +41,8 @@ export default function Home() {
           <img src={Profile} alt="my image" />
         </div>
       </div>
+    <Loader type="ball-clip-rotate-multiple" active/>
     </div>
+    </>
   );
 }

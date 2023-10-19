@@ -8,6 +8,8 @@
     background-color: rgba(0, 0, 0, 0.521);
     box-shadow: rgba(89, 88, 88, 0.35) 0px 5px 15px;
     cursor: pointer;
+    position: relative;
+    animation: fadeInUp 5s 0s;
 
     &:hover {
         background-color: rgba(100, 100, 100, 0.301);
@@ -16,13 +18,16 @@
     .project-img {
         width: 100%;
         height: 7rem;
-        position: relative;
+        overflow: hidden;
+        border-top-right-radius: 0.5rem;
+        border-top-left-radius: 0.5rem;
         img {
             border-top-left-radius: 0.5rem;
             border-top-right-radius: 0.5rem;
             width: 100%;
             height: 100%;
             object-fit: cover;
+            transition: 0.5s;
         }
         .types {
             position: absolute;
@@ -36,10 +41,14 @@
             border-radius: 0.3rem;
             width: 4.5rem;
             text-align: left;
+            z-index: 99;
             span {
                 font-weight: 400
             }
         }
+    }
+    &:hover img {
+        transform: scale(1.5);
     }
 
     .card-info {

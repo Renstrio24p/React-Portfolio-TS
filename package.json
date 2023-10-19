@@ -12,6 +12,7 @@
   "author": "Your Name",
   "license": "ISC",
   "devDependencies": {
+    "animate.css": "^4.1.1",
     "compression-webpack-plugin": "^10.0.0",
     "copy-webpack-plugin": "^11.0.0",
     "css-loader": "^6.8.1",
@@ -21,6 +22,7 @@
     "esbuild-loader": "^4.0.2",
     "file-loader": "^6.2.0",
     "html-webpack-plugin": "^5.5.3",
+    "react-loaders": "^3.0.1",
     "sass": "^1.63.6",
     "sass-loader": "^13.3.2",
     "style-loader": "^3.3.3",

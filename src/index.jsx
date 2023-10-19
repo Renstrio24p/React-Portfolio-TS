@@ -3,6 +3,7 @@ import ReactDOM from "react-dom/client";
 import "./assets/scss/index.scss";
 import "./assets/scss/app.scss";
 import 'boxicons'
+import 'animate.css'
 
 const Start = React.lazy(() => import("./start")); // Import components using Lazy React
 

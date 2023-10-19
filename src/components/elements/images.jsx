@@ -1,42 +1,43 @@
 
 export const 
-        Profile = `images/Waren.png`,
-        Signature = `images/mysignature.png`,
-        React = `images/React.png`,
-        Logo = `images/devwaren.png`,
-        Profile2 = 'images/Waren2.png',
-        Liked = 'images/thumbsup.png',
-        Humble = 'images/humble.png',
-        Crown = 'images/crown.png',
-        Webpack = 'images/webpack.png',
-        GlassEmoji = 'images/glassesimoji.png',
-        HeartEmoji = 'images/heartemoji.png',
-        MySQL = 'images/mysql.png',
-        TypeScript = 'images/Typescript.png';
+        Profile = `images/Waren.webp`,
+        Signature = `images/mysignature.webp`,
+        React = `images/React.webp`,
+        Logo = `images/devwaren.webp`,
+        Profile2 = 'images/Waren2.webp',
+        Liked = 'images/thumbsup.webp',
+        Humble = 'images/humble.webp',
+        Crown = 'images/crown.webp',
+        Webpack = 'images/webpack.webp',
+        GlassEmoji = 'images/glassesimoji.webp',
+        HeartEmoji = 'images/heartemoji.webp',
+        MySQL = 'images/mysql.webp',
+        TypeScript = 'images/Typescript.webp',
+        Map = 'images/map.webp'
 
         // typescript
 export const
-        ClockWork = 'images/clockwork-ts.png',
-        Furniture = 'images/furniture-ts.png',
-        Flats = 'images/flats-ts.png',
-        Ecommerce = 'images/e-commerce-ts.png',
-        Calculator = 'images/calculator-ts.png',
-        TaskList = 'images/tasklist-ts.png',
-        Chess = 'images/chess-ts.png';
+        ClockWork = 'images/clockwork-ts.webp',
+        Furniture = 'images/furniture-ts.webp',
+        Flats = 'images/flats-ts.webp',
+        Ecommerce = 'images/e-commerce-ts.webp',
+        Calculator = 'images/calculator-ts.webp',
+        TaskList = 'images/tasklist-ts.webp',
+        Chess = 'images/chess-ts.webp';
 
         // Javascript
 
 export const 
-        NvidiaClone = 'images/nvidia-clone-js.png',
-        PassengerCounter = 'images/passenger-js.png',
-        EmailSMPT = 'images/emailspt-js.png'
+        NvidiaClone = 'images/nvidia-clone-js.webp',
+        PassengerCounter = 'images/passenger-js.webp',
+        EmailSMPT = 'images/emailspt-js.webp'
 
         // React
 
 export const 
-        DogPhoto = 'images/react-dogphoto.png',
-        MemeGenerator = 'images/react-meme.png',
-        NoteApp = 'images/react-note-app.png',
-        TodoList = 'images/react-todolist.png',
-        TravelJournal = 'images/react-traveljournal.png',
-        TicTacToe = 'images/react-tictactoe.png'
+        DogPhoto = 'images/react-dogphoto.webp',
+        MemeGenerator = 'images/react-meme.webp',
+        NoteApp = 'images/react-note-app.webp',
+        TodoList = 'images/react-todolist.webp',
+        TravelJournal = 'images/react-traveljournal.webp',
+        TicTacToe = 'images/react-tictactoe.webp'

@@ -1,5 +1,6 @@
 import { TypeScript } from "../../elements/images";
 import Card from "./Card/Card";
+import Cube from "./Card/Cube/Cube";
 import { PortData } from "./Card/data/ProjectsData";
 import "./Portfolio.scss";
 
@@ -33,11 +34,15 @@ export default function Portfolio() {
         <div className="p-head-portfolio">
           <h2>Templates</h2>
           <p>My Templates</p>
+            <Cube />
         </div>
         <p className="desc">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero ullam
-          nisi eaque illum tempora veritatis itaque enim labore, nostrum dicta
-          soluta consequuntur dignissimos suscipit qui!
+          My templates are entirely coded in Webpack 5, for which I have
+          tailored the configuration to ensure it is lightweight and
+          user-friendly, complete with custom ENV support. I spent a year
+          mastering Webpack.js to delve into its functionalities, explore the
+          capabilities of each stack, and fine-tune its configurations. Webpack
+          5 is a remarkably potent bundler.
         </p>
         <div className="grid">{card2}</div>
       </div>
